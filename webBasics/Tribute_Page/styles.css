@@ -28,7 +28,7 @@ h2 {
 }
 
 
-#main {
+main {
     border-radius: 5px;
     margin: 3rem 3rem;
 }
@@ -53,24 +53,26 @@ h2 {
 #img-div {
     margin: 0;
     padding: 2.5rem;
+    background-color: white;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
-    background-color: white;
-    flex-wrap: wrap;
     align-items: center;
-
+    justify-content: center;
 }
 
-#img {
+img {
     width: 64rem;
+}
+
+
+#image {
     max-width: 100%;
     height: auto;
-    padding-bottom: 20px;
+    padding-bottom: 2rem;
 }
 
 #img-caption {
-    width: 64rem;
+    max-width: 64rem;
     text-align: justify;
     font-weight: 500;
 }
