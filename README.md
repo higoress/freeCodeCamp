@@ -1,8 +1,9 @@
-# Todo
+# Design de Websites Estáticos
 
-### Home Work Assignment from Web Engineering class at University of Minho
+## Projeto 1 - Página de Tributo a Chadwick Boseman
 
-A To-do application using only static HTML, JS and CSS.
+Afim de praticar minhas habilidades com desenvolvimento web, o primeiro projeto que desenvolvi foi uma página de tributo a Chadwick Boseman, o qual morreu recentemente de câncer aos 43 anos.
+Este website foi desenvolvido usando apenas HTML e plain CSS. 
+Este projeto possui acessibilidade para os mais diversos dispositivos, com responsividade adequada.
 
-It's needed a http-server application, to fetch data from the api. I'm currently using VsCode extesion live-server, but npm 
-http-server should work aswell. I'll add more information soon.
+Para acessar a versão do github pages, acesse: [Tributo à Chadwick Boseman](https://higoress.github.io/freeCodeCamp/)
