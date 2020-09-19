@@ -232,3 +232,48 @@ button span:nth-child(4){
     --n: 4;
 }
 
+footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+footer a {
+    padding: 10px;
+    text-decoration: none;
+    color: var(--color-light-black);
+    border: 2px solid var(--color-light-black);
+}
+
+footer a:hover{
+    background-color: var(--color-light-black);
+    border: 2px solid var(--color-white);
+    color: var(--color-white);
+}
+
+footer a span{
+    padding: 3px;
+}
+
+footer a:hover > span{
+
+    animation-name: heartbeat;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    
+}
+
+
+@keyframes heartbeat{
+    0% {
+        color:white;
+    }
+    50% {
+        color: red;
+    }
+    100%{
+        color: white;
+    }
+}
+
