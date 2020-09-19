@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FeedBack Page</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/styles.css">
+</head>
+
+<body>
+    <div id="main" class="slide-top">
+        <header class="card">
+            <div class="header-detail"></div>
+            <h1 id="title">Avaliação de serviços</h1>
+            <div>
+                <p id="description">Obrigado por nos ajudar a crescer</p>
+            </div>
+        </header>
+        <main class="card">
+            <form id="survey-form" autocomplete="off" aria-autocomplete="none">
+                <div class="container">
+                    <div class="form-group" id="contato">
+                        <label id="name-label" for="name">
+                            Nome
+                            <input id="name" class="form-control" autocomplete="" type="text" required placeholder="Digite seu nome">
+                        </label>
+                        <label id="email-label" for="email">
+                            E-mail
+                            <input id="email" class="form-control" type="email" required
+                                placeholder="Digite seu e-mail">
+                        </label>
+                    </div>
+
+                    <div class="form-group" id="projeto">
+                        <label for="projects">
+                            Qual o tipo de projeto realizado?
+                            <select class="form-control input-radio" name="projects" id="dropdown">
+                                <option value selected disabled>Selecione o tipo de projeto</option>
+                                <option value="website">WEB sites</option>
+                                <option value="mobile">Aplicativos mobile</option>
+                                <option value="multi">Sistemas multiplataformas</option>
+                                <option value="iot">Projetos de automação</option>
+                                <option value="datascience">Projeto de análise de dados</option>
+                            </select>
+                        </label>
+                    </div>
+                    <div id="checkbox" class="form-group">
+                        <label>
+                            Poderia nos dizer do que gostou?
+                            <span>(selecione todos que se aplicam)</span>
+                            <label>
+                                <input type="checkbox" class="input-checkbox" name="liked" value="qualidade"
+                                    class="input-checkbox"> Qualidade da
+                                solução
+                            </label>
+                            <label>
+                                <input type="checkbox" class="input-checkbox" name="liked" value="on-time"
+                                    class="input-checkbox"> Execução dentro
+                                do
+                                tempo
+                                previsto
+                            </label>
+                            <label>
+                                <input type="checkbox" class="input-checkbox" name="liked" value="feedback"
+                                    class="input-checkbox"> FeedBack
+                                constante
+                            </label>
+                            <label>
+                                <input type="checkbox" class="input-checkbox" name="liked" value="fitting"
+                                    class="input-checkbox"> Adequação da
+                                solução
+                            </label>
+                        </label>
+                    </div>
+
+                    <div class="form-group" id="avaliacao">
+                        <label>
+                            Você recomendaria nossos serviços a um amigo?
+                            <label>
+                                <input type="radio" name="recommend" value="com-certeza" class="radio-input" checked>
+                                Com certeza
+                            </label>
+                            <label>
+                                <input type="radio" name="recommend" value="talvez" class="radio-input">
+                                Talvez
+                            </label>
+                            <label>
+                                <input type="radio" name="recommend" value="nao" class="radio-input">
+                                Não
+                            </label>
+                        </label>
+                    </div>
+                    <div class="form-group">
+                        <label id="number-label" for="number" required>
+                            Satisfação: <span>(0 insatisfeito - 5 muito satisfeito)</span>
+                            <input id="number" type="number" min="0" max="5" placeholder="Avalie o serviço">
+                        </label>
+                    </div>
+                    <div class="form-group">
+                        <label for="comentario">
+                            Comentários, sugestões ou reclamações
+                            <textarea name="comentario" id="comentario"></textarea>
+                        </label>
+                    </div>
+                    <div class="form-group">
+                        <button id="submit" type="submit">Avaliar
+                            <span></span><span></span><span></span><span></span>
+                        </button>
+                    </div>
+                </div>
+            </form>
+        </main>
+    </div>
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js" />
+    </body>
+</html>
